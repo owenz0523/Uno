@@ -39,7 +39,7 @@ class Card
     
     string toString()
     {
-        return color + " " + to_string(num);
+        return color + to_string(num) + " ";
     }
     
 

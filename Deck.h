@@ -4,6 +4,8 @@
 #include <list>
 #include <vector>
 #include <string>
+#include <algorithm>
+#include <cstdlib>
 
 using namespace std;
 
@@ -11,9 +13,13 @@ class Deck
 {
     private:
     vector<Card> cards;
-
+    
     public:
-    void Deck::initialize()
+    Deck(){
+
+    }
+
+    void initialize()
     {
         vector<string> colors = {"R", "B", "G", "Y"};
         for (int i=0; i < 13; i++) {
@@ -25,22 +31,21 @@ class Deck
         }
         for (int i= 13; i < 15; i++)
         {
-            Card newCard("D", i);
+            Card newCardSP("D", i);
             for (int j=0; j < 4; j++) {
-                cards.push_back(newCard);
+                cards.push_back(newCardSP);
             }
         }
 
     };
 
-    void shuffle()
-    {
-        
-    };
+    void shuffle() {
+        random_shuffle(cards.begin(), cards.end());
+    }
 
-    void Deck::toString()
+    void toString()
     {
-        for (int i = 0; i < 128; i++)
+        for (int i = 0; i < 112; i++)
         {
             cout << cards[i].toString();
         }

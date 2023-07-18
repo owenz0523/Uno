@@ -14,5 +14,7 @@ int main() {
     Deck gameDeck = Deck();
     gameDeck.initialize();
     gameDeck.toString();
+    gameDeck.shuffle();
+    gameDeck.toString();
     return 0;
 }

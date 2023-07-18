@@ -4,7 +4,7 @@
 #include "deck.h"
 #include <list>
 
-class Deck
+class Player
 {
     private:
     list<Card> cards;
