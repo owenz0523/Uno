@@ -21,40 +21,17 @@ class Card
     Card* next;
     
     public: 
-    Card(string col, int number)
-    {
-        color = col;
-        num = number;
-    }
+    Card(string col, int number);
 
-    bool isValid(Card other)
-    {
-        if (color == other.getColor() || color == "D" || num == other.getNum())
-        {
-            return true; 
-        }
-        return false;
-    }
+    bool isValid(Card other);
 
-    void activate()
-    {
-        
-    }
+    void activate();
 
-    int getNum()
-    {
-        return num;
-    }
+    int getNum();
 
-    string getColor()
-    {
-        return color;
-    }
+    string getColor();
     
-    string toString()
-    {
-        return color + to_string(num) + " ";
-    }
+    string toString();
     
 
 };
