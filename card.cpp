@@ -1,5 +1,5 @@
+#include "main.h"
 #include "card.h"
-#include <string>
 
 Card::Card(string col, int number)
 {

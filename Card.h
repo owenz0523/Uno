@@ -1,9 +1,8 @@
 #ifndef CARD_H
 #define CARD_H
 
+#include "main.h"
 
-#include <iostream>
-#include <string> 
 using namespace std;
 /*
 10 = reverse

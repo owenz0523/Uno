@@ -1,9 +1,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
+#include "main.h"
 #include "card.h"
 #include "deck.h"
-#include <list>
-#include <vector>
 
 using namespace std; 
 
@@ -16,50 +15,19 @@ class Player
 
     public:
     
-    Player(string n, int t)
-    {
-        name = n;
-        turn = t;
-    }
+    Player(string n, int t);
 
-    void addToHand(Card c)
-    {
-        hand.push_back(c);
-    }
+    void addToHand(Card c);
 
-    Card peek()
-    {
-        return hand[hand.size() - 1];
-    }
+    Card peek();
 
-    bool won()
-    {
-        if (hand.size() == 0)
-        {
-            return true;
-        }
-        return false;
-    }
+    bool won();
 
-    Card getCardAtPos(int p)
-    {
-        return hand[p];
-    }
+    Card getCardAtPos(int p);
     
-    list<Card> getHand()
-    {
-        return getHand();
-    }
+    list<Card> getHand();
 
-    void handToString()
-    {
-        string s;
-        for (int i = 0; i < hand.size(); i++)
-        {
-            cout << hand[i].toString();
-        }
-        cout << "||";
-    }
+    void handToString();
 };
 
 #endif

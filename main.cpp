@@ -1,10 +1,7 @@
+#include "main.h"
 #include "card.h"
 #include "deck.h"
 #include "player.h"
-#include <iostream>
-#include <list>
-#include <vector>
-#include <string>
 
 using namespace std;
 
