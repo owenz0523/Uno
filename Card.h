@@ -27,6 +27,20 @@ class Card
         num = number;
     }
 
+    bool isValid(Card other)
+    {
+        if (color == other.getColor() || color == "D" || num == other.getNum())
+        {
+            return true; 
+        }
+        return false;
+    }
+
+    void activate()
+    {
+        
+    }
+
     int getNum()
     {
         return num;
