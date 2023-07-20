@@ -1,6 +1,8 @@
 #ifndef DECK_H
 #define DECK_H
 #include "main.h"
+#include "player.h"
+#include <vector>
 
 using namespace std;
 

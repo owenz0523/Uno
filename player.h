@@ -3,6 +3,8 @@
 #include "main.h"
 #include "card.h"
 #include "deck.h"
+#include <vector>
+#include <list>
 
 using namespace std; 
 
