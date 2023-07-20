@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     Deck gameDeck = Deck();
     Deck pile = Deck();
-    gameDeck.Deck::initialize();
-    gameDeck.Deck::shuffleDeck();
-    gameDeck.Deck::toString();
+    gameDeck.initialize();
+    gameDeck.shuffleDeck();
+    gameDeck.toString();
 }
