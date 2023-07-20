@@ -5,7 +5,7 @@
 
 Deck::Deck()
 {
-
+    
 }
 
 void Deck::initialize()
@@ -34,9 +34,9 @@ void Deck::shuffleDeck() {
     shuffle(cards.begin(), cards.end(), g);
 }
 
-void Deck::addToDeck(Card c)
+void Deck::add(Card c)
 {
-        cards.push_back(c);
+    cards.push_back(c);
 }
 
 Card Deck::peek()

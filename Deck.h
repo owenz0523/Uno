@@ -18,7 +18,7 @@ class Deck
 
     void shuffleDeck();
 
-    void addToDeck(Card c);
+    void add(Card c);
 
     Card peek();
 
