@@ -3,9 +3,9 @@
 #include "card.h"
 #include "player.h"
 
-Deck::Deck()
+Deck::Deck(vector<Card> diffCards)
 {
-    
+    cards = diffCards;
 }
 
 void Deck::initialize()
@@ -51,7 +51,7 @@ void Deck::pop()
 
 void Deck::toString()
 {
-    for (int i = 0; i < 112; i++)
+    for (int i = 0; i < cards.size(); i++)
     {
         cout << cards[i].toString();
     }

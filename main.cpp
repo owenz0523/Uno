@@ -8,11 +8,11 @@ using namespace std;
 
 
 int main() {
-    Deck gameDeck = Deck();
-    Deck pile = Deck();
+    vector<Card> diffCards = {};
+    Deck gameDeck = Deck(diffCards);
+    Deck pile = Deck(diffCards);
     gameDeck.initialize();
     gameDeck.shuffleDeck();
-    gameDeck.toString();
     vector<Player> players;
     vector<Player> reversePlayers;
     for (int i = 0; i < 4; i++)
@@ -22,9 +22,8 @@ int main() {
     }
     gameDeck.distributeCards(players);
     
-    Card c = Card("G", 7);
-
-    pile.getDeck().push_back(c);
+    pile.add(gameDeck.peek());
+    gameDeck.pop();
     
     pile.toString();
 

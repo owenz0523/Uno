@@ -12,7 +12,7 @@ class Deck
     vector<Card> cards;
     
     public:
-    Deck();
+    Deck(vector<Card> diffCards);
 
     void initialize();
 
